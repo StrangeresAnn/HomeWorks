@@ -21,11 +21,11 @@ Console.Write("Input a third number: ");
 int third_number = Convert.ToInt32(Console.ReadLine());
 
 if (first_number > second_number && first_number > third_number)
-Console.WriteLine($"Max number:{first_number}");
-    else if (second_number > first_number && second_number > third_number)
-Console.WriteLine($"Max number:{second_number}");
-        else
-Console.WriteLine($"Max number:{third_number}"); 
+    Console.WriteLine($"Max number:{first_number}");
+else if (second_number > first_number && second_number > third_number)
+    Console.WriteLine($"Max number:{second_number}");
+else
+    Console.WriteLine($"Max number:{third_number}"); 
 */
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
@@ -33,9 +33,9 @@ Console.WriteLine($"Max number:{third_number}");
 Console.Write("Input a number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number % 2 == 0)
-Console.WriteLine("The number is even");
+    Console.WriteLine("The number is even");
 else
-Console.WriteLine("The number is odd");
+    Console.WriteLine("The number is odd");
 */
 
 // Задача 8: Напишите программу, которая на вход принимает число (N),а на выходе показывает все чётные числа от 1 до N.
@@ -43,8 +43,9 @@ Console.WriteLine("The number is odd");
 Console.Write("Input a number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int i = 2;
+
 if (number < 2)
-Console.WriteLine($"Please enter any number from 1");
+    Console.WriteLine($"Please enter any number from 1");
 else
     while (i <= number)
 {

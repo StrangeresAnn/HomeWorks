@@ -3,15 +3,16 @@
 /*
 void ShowQuart(int quartNum)
 {
-if(quartNum >= 1 && quartNum <= 4)
-{
-    if(quartNum == 1) Console.WriteLine("x > 0 and y > 0");
-    else if (quartNum == 2) Console.WriteLine("x < 0 and y > 0");
-    else if (quartNum == 2) Console.WriteLine("x < 0 and y < 0");
-    else Console.WriteLine("x > 0 and y < 0");
-}
-else
-    Console.WriteLine("Wrong number!");
+    if(quartNum >= 1 && quartNum <= 4)
+    {
+        if(quartNum == 1) Console.WriteLine("x > 0 and y > 0");
+        else if (quartNum == 2) Console.WriteLine("x < 0 and y > 0");
+        else if (quartNum == 3) Console.WriteLine("x < 0 and y < 0");
+        else Console.WriteLine("x > 0 and y < 0");
+    }
+    else
+        Console.WriteLine("Wrong number!");
+    }
 }
 
 Console.Write("Input a number of quart: ");

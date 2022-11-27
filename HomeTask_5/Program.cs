@@ -94,59 +94,60 @@
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным 
 // и минимальным элементов массива.
 
-double DifferenceMaxAndMin(double[] array)
-{
-    double max = array[0];
-    double min = array[0];
-    double res = 0;
-    for(int i = 0; i < array.Length; i++)
-    {
-        if(array[i] > max)
-        {
-            max = array[i];
-        }
-        if(array[i] < min)
-        {
-            min = array[i];
-        }
+// double DifferenceMaxAndMin(double[] array)
+// {
+//     double max = array[0];
+//     double min = array[0];
+//     double res = 0;
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         if(array[i] > max)
+//         {
+//             max = array[i];
+//         }
+//         if(array[i] < min)
+//         {
+//             min = array[i];
+//         }
 
-    }
-    max = Math.Round(max);
-    min = Math.Round(min);
-    res = max - min;
-    return Math.Round(res);
-}
+//     }
+//     max = Math.Round(max);
+//     min = Math.Round(min);
+//     res = max - min;
+//     return Math.Round(res);
+// }
 
-double[] CreateRandomMaterialArray(int size)
-{
-    double[] array = new double[size];
+// double[] CreateRandomMaterialArray(int size)
+// {
+//     double[] array = new double[size];
 
-    for(int i =0; i < size; i++)
-        array[i] = Math.Round(new Random().NextDouble());
+//     for(int i =0; i < size; i++)
+//         array[i] = Math.Round(new Random().NextDouble()* 100, 3);
     
-    return array;
-}
+//     return array;
+// }
 
-void ShowArray(double[] array)
-{
-    Console.Write("Array is: ");
+// void ShowArray(double[] array)
+// {
+//     Console.Write("Array is: ");
 
-    for(int i =0; i < array.Length; i++)
-        Console.Write(array[i] + " ");
-}
+//     for(int i =0; i < array.Length; i++)
+//         Console.Write(array[i] + " ");
+// }
 
-Console.Write("Input number of elements: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a min  possible value: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input a max possible value: ");
-int max = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input number of elements: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a min  possible value: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input a max possible value: ");
+// int max = Convert.ToInt32(Console.ReadLine());
 
-double[] myArray = CreateRandomMaterialArray(n);
-ShowArray(myArray);
-double difference = DifferenceMaxAndMin(myArray);
+// double[] myArray = CreateRandomMaterialArray(n);
+// ShowArray(myArray);
+// double difference = DifferenceMaxAndMin(myArray);
 
-Console.WriteLine("Sum of elements in odd positions" + difference);
+// Console.WriteLine("Difference between max and min" + difference);
+
 
 
 

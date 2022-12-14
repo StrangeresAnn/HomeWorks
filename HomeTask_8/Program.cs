@@ -1,28 +1,28 @@
-﻿int[,] ReturnRandom2DArray(int rows, int cols, int minValue, int maxValue)
-{
-    int[,] array = new int[rows, cols];
+﻿// int[,] ReturnRandom2DArray(int rows, int cols, int minValue, int maxValue)
+// {
+//     int[,] array = new int[rows, cols];
 
-    for (int i = 0; i < rows; i++)
-        for (int j = 0; j < cols; j++)
-            array[i, j] = new Random().Next(minValue, maxValue + 1);
+//     for (int i = 0; i < rows; i++)
+//         for (int j = 0; j < cols; j++)
+//             array[i, j] = new Random().Next(minValue, maxValue + 1);
 
-    return array;
-}
+//     return array;
+// }
 
-void Show2DArray(int[,] array, string msg="Generated array:\n")
-{
-    Console.WriteLine(msg);
+// void Show2DArray(int[,] array, string msg="Generated array:\n")
+// {
+//     Console.WriteLine(msg);
 
-    for (int i = 0; i < array.GetLength(0); i++)
-        {
-        for (int j = 0; j < array.GetLength(1); j++)
-            Console.Write($"{array[i, j]}\t");
+//     for (int i = 0; i < array.GetLength(0); i++)
+//         {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//             Console.Write($"{array[i, j]}\t");
 
-        Console.WriteLine();
-        }
+//         Console.WriteLine();
+//         }
 
-    Console.WriteLine();
-}
+//     Console.WriteLine();
+// }
 
 // Console.Write("Enter a number of rows: ");
 // int numX = Convert.ToInt32(Console.ReadLine());
